@@ -31,5 +31,7 @@ def wsgihandler(environ, start_reponse):
             b' some more data',
             b'\r\n']
 
+wsgi_application = wsgihandler
+
 if __name__ == '__main__':
     serve(wsgihandler)
